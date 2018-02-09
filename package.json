@@ -1,13 +1,14 @@
 {
   "name": "replace-item-in-array",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "main": "dist/index.js",
   "author": "gothic-prince",
   "license": "MIT",
   "scripts": {
     "test": "jest"
   },
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-jest": "^22.1.0",
     "babel-preset-env": "^1.6.1",
