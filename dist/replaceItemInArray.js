@@ -7,15 +7,14 @@ Object.defineProperty(exports, "__esModule", {
  * @param array {Array}
  * @param search
  * @param replace
- * @return {Array}
+ * @return {Boolean}
  */
 var replaceItemInArray = function replaceItemInArray(array, search, replace) {
-  var copyArray = array.slice();
-  var index = copyArray.indexOf(search);
+  var index = array.indexOf(search);
   if (index !== -1) {
-    copyArray.splice(index, 1, replace);
-    return copyArray;
+    array.splice(index, 1, replace);
+    return true;
   }
-  return copyArray;
+  return false;
 };
 exports.default = replaceItemInArray;

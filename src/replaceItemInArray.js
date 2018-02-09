@@ -2,15 +2,14 @@
  * @param array {Array}
  * @param search
  * @param replace
- * @return {Array}
+ * @return {Boolean}
  */
 const replaceItemInArray = (array, search, replace) => {
-  const copyArray = array.slice()
-  const index = copyArray.indexOf(search)
+  const index = array.indexOf(search)
   if (index !== -1) {
-    copyArray.splice(index, 1, replace)
-    return copyArray
+    array.splice(index, 1, replace)
+    return true
   }
-  return copyArray
+  return false
 }
 export default replaceItemInArray
