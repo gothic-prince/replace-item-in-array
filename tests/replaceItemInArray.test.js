@@ -1,4 +1,4 @@
-import replaceItemInArray from '../dist/replaceItemInArray'
+import replaceItemInArray from '../dist'
 describe('replaceItemInArray', () => {
   describe('Numbers', () => {
     const arr = [1,2,3,4,5,6]
@@ -25,6 +25,7 @@ describe('replaceItemInArray', () => {
       expect(arr[1]).toBe(2)
     })
   })
+
   describe('Strings', () => {
     const arr = ["red","black","yellow","white","blue"]
     const replacedArr = replaceItemInArray(arr, "yellow", "green")
